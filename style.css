@@ -1,0 +1,97 @@
+body, html{
+  background-color: #eef886;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#container{
+        max-width: 600%;
+        height: 100vh;
+        /*background-color: #FFF;*/
+        border: 1px solid #fff;
+        justify-content: center;
+        display: flex;
+        display: grid;
+        background-image: url("medieval.gif");
+        background-size: cover;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+        #container {
+            flex: 50%;
+        }
+    }
+
+    .box{
+      flex: 0;
+      display: inline-flex;
+      align-self: flex-end;
+      /*background-color: black; */
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+        .box {
+            flex: 50%;
+        }
+    }
+
+  .box>*:nth-child(1) {
+        align-items: center;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 90%;
+        margin-top: 17vh;
+        background-color: #cc66cc;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+    }
+
+    .box>*:nth-child(2){
+        align-self: center;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 90%;
+        background-color: #666ccc;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+    }
+
+  .box>*:nth-child(3){
+         align-self: center;
+         width: 15vh;
+         height: 15vh;
+         margin-top: 20vh;
+         border-radius: 90%;
+         background-color: #ccc666;
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+    }  
+
+  /* Podio */
+    .podio {
+        margin-top: auto;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+/*---------- ANIMAÇÃO ---------- */ 
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+    }  
+
+    .podio img { 
+    animation: animacao 1s ease forwards; 
+  }
+
+  @keyframes animacao {
+      from { 
+          height: 5vh;
+      }
+      to { 
+          height: 65vh;
+      }
+    }
+    @media screen and (max-width: 1280px) and (min-width: 320px) {
+        /* .podio img{ flex: 50%; } */
+    }
+
+/*---------- FIM ANIMAÇÃO ----------*/
